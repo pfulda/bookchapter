@@ -1,0 +1,74 @@
+sections
+
+pre-history of GW interferometric detectors (Paul)
+
+-initial concept, Weiss, Thorne, Drever (when did Virgo get involved/started?)
+
+-prototypes (MIT, Glasgow, Caltech, etc.?)
+
+history of 1st generation detectors (Giac)
+
+-LIGO project funded
+-Virgo project funded
+-GEO project funded
+-TAMA project funded
+
+-founding of LSC, MOU with Virgo and foundation of LVC. (?)
+
+* now move onto "organic" description of intial detectors. Leave some of the details for the Advanced detectors section. Doesn't have to be with subheadings for each detector.
+
+-LIGO
+--Sites
+--Vacuum infrastructure
+--Seismic isolation
+--Sensitivity
+--eLIGO
+
+-Virgo
+--Site
+--Vacuum infrastructure
+--Optical layout
+--Seismic isolation (super attenuators)
+--Sensitivity
+--Virgo+
+
+-GEO600 (specific new things that GEO pioneered)
+--DC readout
+--Signal recycling
+--squeezing (mention test in LIGO?)
+--delay lines (no FP cavs)
+
+-CLIO, TAMA
+
+Advanced detectors
+-aLIGO
+--Sesmic isolation upgrade (Giac)
+--optical layout (Paul)
+--Laser power upgrade (Giac)
+--sensing and control (Paul)
+--Thermal compensation (Giac)
+- signal recycling (Paul)
+
+-adVirgo
+--Sesmic isolation upgrade?
+--Laser power upgrade
+--Optical layout
+--sensing and control
+--Thermal compensation
+- signal recyling
+
+Future of ground-based interferometric GW detection
+*  also oranic like the 1st generation detectors, or split like this:
+-expanding the network
+-pushing the low frequency limits (underground, NN)
+-beating thermal noise
+
+
+*include
+--Kagra
+--Indigo (
+--ET (Paul)
+--aLIGO upgrades
+--Virgo upgrades
+
+
