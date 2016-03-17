@@ -158,3 +158,4 @@ pythontex-files-*/
 # Latexian
 TSWLatexianTemp*
 /TEX/main.pdf
+/bookchapter.txss
