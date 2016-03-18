@@ -43,15 +43,44 @@ In Advanced LIGO, the Hartman sensors use green laser beams injected from the AR
 \item signal recycling (Paul)
 \end{itemize}
 
-Optical layout (Paul)
+The optical layout of Advanced LIGO is different from the initial LIGO layout in several ways. 
+Perhaps the most fundamental change to the optical layout is the addition of a signal recycling 
+mirror between the anti-symmetric side of the beam splitter and the optical detection port. 
+In its current configuration this oft-called signal recycling mirror is actually tuned such as to 
+increase the bandwidth of the detector. As such, a more apposite name might be the signal extraction mirror. 
 
-\begin{itemize}
-\item stable recycling cavities
-\item larger beam sizes on TMs, configuration with a small waist
-\item arm length stabilization
-\item OMC
-\item input optics?
-\end{itemize}
+The signal extraction mirror forms a new cavity within Advanced LIGO; the signal recycling cavity. 
+Both the signal recycling cavity and the power recycling cavity in Advanced LIGO are designed to be 
+geometrically \emph{stable}, by which it should be understood that the round-trip Gouy phase in the cavity 
+is significant, and thus higher-order spatial modes are non-degenerate. 
+This is contrast to the power recycling cavity in initial LIGO, which was only marginally stable. 
+The advantages of the stable recycling cavity design have been clear during the commissioning of 
+Advanced LIGO, where commissioning of the length and alignment sensing and control systems has 
+been a much smoother process than in initial LIGO. 
+
+Another important geometric change to the optical layout between initial LIGO and Advanced LIGO is 
+in the arm cavities. There was a drive towards using larger beam spot sizes on the mirrors in Advanced 
+LIGO in order to mitigate the effects of thermal noise. In general there are two cavity geometry solutions available 
+that will give a specific beam spot size on the mirrors for a two-mirror cavity of fixed length. The initial LIGO 
+arm cavities were designed with a large beam waist inside the cavities, resulting in a cavity g-factor of XXX. 
+Advanced LIGO uses the alternative solution of having a small beam waist size in the cavities, giving a cavity g-factor of XXX. 
+One of the advantages of the Advanced LIGO arm cavity design is that the relatively large divergence angle of the cavity 
+eigenmode reduces the sensitivity of the interferometer to beam tilts (check). 
+
+Several additional optical subsystems have been added in the upgrade from initial LIGO to Advanced LIGO. 
+During the enhanced LIGO phase (shortly before initial LIGO went offline for the major upgrade to aLIGO) an output
+mode cleaner was added at the output port. The output mode cleaner is a crucial component of the DC readout 
+scheme which was first demonstrated in GEO600, and which was determined to be a more optimal solution for 
+readout of the gravitational wave signal than the previously used RF heterodyne readout scheme. The output mode 
+cleaner subsystem was retained in the aLIGO optical layout, and takes the form of a suspended fixed spacer cavity 
+with a bow tie configuration. The output mode cleaner has the essential function of removing RF sidebands and higher-order 
+spatial modes from the light incident on the photodiode, this mitigating their impact on the shot noise sensitivity. 
+
+A great effort was made in the upgrade to Advanced LIGO to make the lock acquisition process more deterministic than 
+stochastic. Part of this effort was the inclusion of the arm length stabilization (ALS) subsystem. This subsystem consists uses 
+green frequency-doubled Nd:YAG beams which are phased locked to the main laser to independently control the arm cavities during 
+lock acqusition of the central dual-recycled Michelson interferometer (DRMI). Once the DRMI is locked the ALS can be used 
+methodically bring the arms to resonance, bringing the full interferometer to the ideal operating point.
 
 interferometric sensing and control (Paul)
 
