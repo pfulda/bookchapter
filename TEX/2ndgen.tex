@@ -25,15 +25,7 @@ At freqeuncies above about ??? Hz, the interferometer sensitivity is limited by 
 \paragraph*{Thermal compensation system}
 Despite the stringent requirement on the optical absorption of bulk and coating material of the optics, the high power levels circulating in the interferometer result in a non-negligible amount of heat released into the optics. Due to the poor heat conduction in vacuum, this induces important thermal gradients that can modify the optical parameters of the system via two main effects: thermal lensing in the bulk material, due to the temperature dependence of the index of refraction on  and surface distortion. 
 
-\begin{itemize}
-\item Sesmic isolation upgrade (Giac)
-\item optical layout (Paul)
-\item Laser power upgrade (Giac)
-\item sensing and control (Paul)
-\item Thermal compensation (Giac)
-\item signal recycling (Paul)
-\end{itemize}
-
+\paragraph*{Optical layout}
 The optical layout of Advanced LIGO is different from the initial LIGO layout in several ways. 
 Perhaps the most fundamental change to the optical layout is the addition of a signal recycling 
 mirror between the anti-symmetric side of the beam splitter and the optical detection port. 
@@ -47,7 +39,7 @@ is significant, and thus higher-order spatial modes are non-degenerate.
 This is contrast to the power recycling cavity in initial LIGO, which was only marginally stable. 
 The advantages of the stable recycling cavity design have been clear during the commissioning of 
 Advanced LIGO, where commissioning of the length and alignment sensing and control systems has 
-been a much smoother process than in initial LIGO. 
+been a much smoother process than in initial LIGO. (Tangible advantages of stable recycling cavities). 
 
 Another important geometric change to the optical layout between initial LIGO and Advanced LIGO is 
 in the arm cavities. There was a drive towards using larger beam spot sizes on the mirrors in Advanced 
@@ -73,7 +65,20 @@ green frequency-doubled Nd:YAG beams which are phased locked to the main laser t
 lock acqusition of the central dual-recycled Michelson interferometer (DRMI). Once the DRMI is locked the ALS can be used 
 methodically bring the arms to resonance, bringing the full interferometer to the ideal operating point.
 
-interferometric sensing and control (Paul)
+\paragraph*{Interferometric sensing and control}
+The dual-recycled Fabry-Perot Michelson interferometer that makes up aLIGO has a very narrow linear range. 
+The practical consequence of this fact, combined with the fact that with only passive seismic isolation systems typical 
+mirror motions at low frequencies can be of the order several wavelengths, is that length control loops are essential in order 
+to keep the interferometer within the linear range. 
+
+The length sensing of aLIGO is based on the Pound-Drever-Hall laser frequency stabilization scheme~\ref{PDH}. 
+This scheme is based on adding RF phase modulation sidebands to the carrier light, which are well outside the linewidth 
+of the optical cavity 
+to be used as the frequency reference. When the carrier light frequency is brought within one linewidth of the cavity, 
+the carrier picks up a phase shift in reflection of the cavity which is proportional to the difference between carrier light 
+frequency and the cavity resonant frequency. The sidebands can then act as a phase reference, because being far outside 
+the cavity linewidth. ji
+
 
 \begin{itemize}
 \item length sensing and control, PDH
