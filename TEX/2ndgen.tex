@@ -1,11 +1,11 @@
 \subsection{Design and operation of the second generation of interferometric gravitational wave detectors}\label{subsec:2ndgen}
 
-Even while the intial LIGO and Virgo detectors were still far from their design sensitivities, plans were afoot for major 
+Even while the initial LIGO and Virgo detectors were still far from their design sensitivities, plans were afoot for major 
 upgrades to each, aimed at achieving roughly a factor 10 improvement in sensitivity over the whole frequency band. 
 This generation of detectors would be known as the 2nd generation, or the advanced detectors; Advanced LIGO and 
 Advanced Virgo. 
 
-Beside generally aiming at a factor 10 overall improvement in sensitivity, and an expansion of the sensitive 
+Besides generally aiming at a factor 10 overall improvement in sensitivity, and an expansion of the sensitive 
 frequency band towards lower frequencies, the design of the advanced detectors was aimed at making them 
 limited by thermal noise, laser radiation pressure and laser shot noise. As a consequence, all other possible 
 sources of noise needed to be pushed well below these main ones.
@@ -15,14 +15,14 @@ sources of noise needed to be pushed well below these main ones.
 \missingfigure[figwidth=12cm]{Theoretical noise budget of Advanced LIGO, with S6 LIGO noise, and maybe AdVirgo noise budget to go here.}
 
 \paragraph*{Suspensions and seismic isolation.}
-Two of the subsystem that underwent the biggest upgrades in advanced LIGO as compared 
+Two of the subsystems that underwent the biggest upgrades in Advanced LIGO as compared 
 to its predecessor were the Seismic Isolation and Suspension subsystems. Although they 
 are formally two separate subsystems, they work in concert to isolate the test-masses and 
 other critical optics from ground vibrations and other macroscopic motions, and ensure 
 that the they can move as free masses in the relevant degree of freedom above a few Hz.
 
-In Advanced LIGO, the test masses are suspended by four-stages pendula. From top to 
-bottom, the main suspension chain is comprised of two metal masses, and two optics 
+In Advanced LIGO, the test masses are suspended by four-stage pendula. From top to 
+bottom, the main suspension chain is composed of two metal masses, and two optics 
 of the same shape and size, the lowermost one being the test mass. The first metal mass 
 is attached to the suspension structure by four \textit{spring blades}, which are flexible 
 metal blades providing vertical isolation; steel wires run from the tip of the blades to the 
@@ -32,27 +32,27 @@ is attached to the topmost optic by four fused silica fibers; these are directly
 the two optics in a monolithic assembly, such as to reduce mechanical losses and, 
 consequently, thermal noise. The pendulum resonances of the four stages are 
 distributed between 1 and 4 Hz, providing a passive suppression of motion along 
-the optical axis of $10^-7$ at 10\.Hz, and going down as the frequency to the eighth power.
+the optical axis of $10^-7$ at 10\,Hz, and going down as the frequency to the eighth power.
 
-A similar chain of masses, called reaction chain, hangs parallel to the main one, 
+A similar chain of masses, called the reaction chain, hangs parallel to the main one, 
 and supports the sensors and actuators used for local damping and active alignment 
 of the lowermost three masses of the main chain; this provides a quiet reference point 
 for the control forces. The top masses of both chains are instead actuated using the 
 suspension structure as a reference. For all stages except the lowest, the sensors/actuators 
-are compact units that uses shadow sensors to measure the position of, and 
+are compact units that use shadow sensors to measure the position of, and 
 electromagnets to exert forces on, permanent magnets attached to the masses. 
 The last stage has no local sensors, since the position of the test mass is sensed 
-by the global interferometry; the actuators consist of a patterns of electrodes 
+by the global interferometry; the actuators consist of patterns of electrodes 
 deposited on the last mass of the reaction chain, which exert electrostatic 
-attractive forces on the test mass when polarized. This avoids the need of 
-attaching magnet or any other part ot the TM, thus maintaining low mechanical 
+forces on the test mass when polarized. This avoids the need of 
+attaching magnet or any other part to the TM, thus maintaining low mechanical 
 losses and reducing possible couplings to external fields.
 
-Each quad suspension is attached to an in-vacuum seismic isolation platforms, 
+Each quad suspension is attached to an in-vacuum seismic isolation platform, 
 used for further suppression of ground vibrations and precise positioning and 
 alignment with a larger range than allowed by the suspensions themselves. The 
-platforms are six-axis, two-stages active and passive isolators proving more 
-than 3 orders of magnitude isolation above 1\.Hz, and positioning capabilities 
+platforms are six-axis, with two-stage active and passive isolators proving more 
+than 3 orders of magnitude isolation above 1\,Hz, and positioning capabilities 
 with nm resolution over a range of several mm.
 
 Similar seismic isolation platforms are used to support all the in-vacuum optics; 
@@ -76,15 +76,15 @@ to correct for the moon tidal forces.
 %structure by another four wires and four blade springs.
 
 \paragraph*{Laser}
-At freqeuncies above about ??? Hz, the interferometer sensitivity is limited by shot 
+At frequencies above about ??? Hz, the interferometer sensitivity is limited by shot 
 noise in the laser. The relative impact of the shot noise scales as the inverse of the 
 square root of the power: increasing the laser power is thus a conceptually 
 straightforward way of improving the sensitivity in the shot-noise limited band. 
 The Advanced LIGO laser source is designed to deliver a maximum of 180\.W of 
 laser power, as opposed to the 35\.W used in eLIGO. To obtain this, a the eLIGO 
-laser unit is coupled to an high power laser amplifier (say more about this). The 
-beam is per-stabilized in power, using a reference photodiode, and in frequency, 
-using a thermally controlled refernece optical vacity, before being handed off to the Input Optic subsystem.
+laser unit is coupled to a high power laser amplifier (say more about this). The 
+beam is pre-stabilized in power, using a reference photodiode, and in frequency, 
+using a thermally controlled reference optical cavity, before being handed off to the Input Optic subsystem.
 
 \paragraph*{Thermal compensation system}
 Despite the stringent requirement on the optical absorption of bulk and coating 
@@ -107,11 +107,11 @@ in the current configuration is signal \emph{extraction} mirror.
 The signal extraction mirror forms a new cavity within Advanced LIGO; the signal recycling cavity. 
 Both the signal recycling cavity and the power recycling cavity in Advanced LIGO are designed to be 
 geometrically \emph{stable}, by which it should be understood that the round-trip Gouy phase in the cavity 
-is significant, and thus higher-order spatial modes are non-degenerate. 
+is significant, and thus higher-order spatial modes are non-degenerate~\cite{Arain2008}. 
 This is contrast to the power recycling cavity in initial LIGO, which was only marginally stable. 
 The advantages of the stable recycling cavity design have been clear during the commissioning of 
 Advanced LIGO, where commissioning of the length and alignment sensing and control systems has 
-been a much smoother process than in initial LIGO. (Tangible advantages of stable recycling cavities). 
+been a much smoother process than in initial LIGO. (More Tangible advantages of stable recycling cavities). 
 
 Another important geometric change to the optical layout between initial LIGO and Advanced LIGO is 
 in the arm cavities. There was a drive towards using larger beam spot sizes on the mirrors in Advanced 
@@ -119,32 +119,33 @@ LIGO in order to mitigate the effects of thermal noise. In general there are two
 that will give a specific beam spot size on the mirrors for a two-mirror cavity of fixed length. The initial LIGO 
 arm cavities were designed with a large beam waist inside the cavities, resulting in a cavity g-factor of XXX. 
 Advanced LIGO uses the alternative solution of having a small beam waist size in the cavities, giving a cavity g-factor of XXX. 
-One of the advantages of the Advanced LIGO arm cavity design is that the relatively large divergence angle of the cavity 
-eigenmode reduces the sensitivity of the interferometer to beam tilts (check). 
+The major advantage to the small beam waist size solution is that thermal deformations of the test masses caused by 
+absorption in the coatings push the cavity to a more stable geometry, rather than towards a less stable geometry as 
+is the case for the large beam waist design. 
 
 Several additional optical subsystems have been added in the upgrade from initial LIGO to Advanced LIGO. 
 During the enhanced LIGO phase (shortly before initial LIGO went offline for the major upgrade to aLIGO) an output
 mode cleaner was added at the output port. The output mode cleaner is a crucial component of the DC readout 
 scheme which was first demonstrated in GEO600, and which was determined to be a more optimal solution for 
-readout of the gravitational wave signal than the previously used RF heterodyne readout scheme. The output mode 
+readout of the gravitational wave signal than the previously used RF heterodyne readout scheme~\cite{DCreadout}. The output mode 
 cleaner subsystem was retained in the aLIGO optical layout, and takes the form of a suspended fixed spacer cavity 
 with a bow tie configuration. The output mode cleaner has the essential function of removing RF sidebands and higher-order 
-spatial modes from the light incident on the photodiode, this mitigating their impact on the shot noise sensitivity. 
+spatial modes from the light incident on the photodiode, thus mitigating their impact on the shot noise sensitivity. 
 
 A great effort was made in the upgrade to Advanced LIGO to make the lock acquisition process more deterministic than 
 stochastic. Part of this effort was the inclusion of the arm length stabilization (ALS) subsystem. This subsystem consists uses 
 green frequency-doubled Nd:YAG beams which are phased locked to the main laser to independently control the arm cavities during 
-lock acqusition of the central dual-recycled Michelson interferometer (DRMI). Once the DRMI is locked the ALS can be used 
+lock acquisition of the central dual-recycled Michelson interferometer (DRMI)~\cite{Staley2014}. Once the DRMI is locked the ALS can be used 
 methodically bring the arms to resonance, bringing the full interferometer to the ideal operating point.
 
 \paragraph*{Interferometric sensing and control}
 The dual-recycled Fabry-Perot Michelson interferometer that makes up aLIGO has a very narrow linear range. 
-The practical consequence of this fact, combined with the fact that with only passive seismic isolation systems typical 
+The practical consequence of this fact, combined with the fact that even with the advanced seismic isolation systems typical 
 mirror motions at low frequencies can be of the order several wavelengths, is that length control loops are essential in order 
 to keep the interferometer within the linear range. 
 
 The length sensing of all interferometric ground-based GW detectors is based on the Pound-Drever-Hall (PDH) laser 
-frequency stabilization scheme~\ref{PDH}. 
+frequency stabilization scheme~\cite{PDH}. 
 In this scheme an electro-optic modulator is used to add to the main laser frequency RF phase modulation sidebands, 
 which are typically non-resonant in an optical cavity when the carrier light is resonant.
 When the carrier light frequency is brought close to resonance in the cavity, 
@@ -167,11 +168,13 @@ are resonant in both power and signal recycling cavities, and experience a brigh
 at 45\,MHz provide good sensitivity to signal recycling cavity length.
 
 The alignment of optics must also be sensed and controlled in GW detectors. In aLIGO the sensing is currently achieved using a method 
-called Wavefront Sensing, developed by Henry Ward and colleagues. This method is similar in principle to the PDH length sensing, 
+called Wavefront Sensing, developed by Henry Ward and colleagues~\cite{Morrison1994, Morrison1994b}. 
+This method is similar in principle to the PDH length sensing, 
 except that quadrant photodectors are used 
 instead of single-element photodetectors in order to measure the beats between sidebands and carrier in different spatial modes. An 
 alternative method developed by Dana Anderson was used in Virgo, whereby the sideband frequencies were chosen such that higher-order 
-spatial modes of the sidebands would be co-resonant in some of the optical cavities with the carrier fundamental mode. 
+spatial modes of the sidebands would be co-resonant in some of the optical cavities with the carrier fundamental mode~\cite{Anderson1984}. 
+Somehow crowbar in a reference to~\cite{Fritschel1998}.
 
 \subsubsection{Advanced Virgo}
 \begin{itemize}
