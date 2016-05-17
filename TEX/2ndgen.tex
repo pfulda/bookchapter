@@ -87,20 +87,25 @@ At frequencies above about ??? Hz, the interferometer sensitivity is limited by 
 noise in the laser. The relative impact of the shot noise scales as the inverse of the 
 square root of the power: increasing the laser power is thus a conceptually 
 straightforward way of improving the sensitivity in the shot-noise limited band. 
-The Advanced LIGO laser source is designed to deliver a maximum of 180\.W of 
-laser power, as opposed to the 35\.W used in eLIGO. To obtain this, a the eLIGO 
+The Advanced LIGO laser source is designed to deliver a maximum of 180\,W of 
+laser power, as opposed to the 35\,W used in eLIGO. To obtain this, a the eLIGO 
 laser unit is coupled to a high power laser amplifier (say more about this). The 
 beam is pre-stabilized in power, using a reference photodiode, and in frequency, 
 using a thermally controlled reference optical cavity, before being handed off to the Input Optic subsystem.
 
+%ISSUE: still working on this
 \paragraph*{Thermal compensation system}
 Despite the stringent requirement on the optical absorption of bulk and coating 
 material of the optics, the high power levels circulating in the interferometer result 
-in a non-negligible amount of heat released into the optics. Due to the poor heat 
-conduction in vacuum, this induces important thermal gradients that can modify 
+in a non-negligible amount of heat released into the optics.
+Due to the poor heat conduction in vacuum, this induces important thermal gradients that can modify 
 the optical parameters of the system via two main effects: thermal lensing in the 
-bulk material, due to the temperature dependence of the index of refraction  
-and surface distortion. 
+bulk material due to the temperature dependence of the refractive index,
+and distortion of the high reflectivity (HR) surface of the mirrors due to thermo-mechanical stress.
+%ISSUE: check with Paul if the optical part of this statement makes sense
+HR surface distortion is particularly important for the input and end test masses, both because of they see the highest power level of all the interferometer optics (up to about 1\MW), and because any deformation of their surface has a bigger impact on the interferometer output.
+Thermal lensing, while irrelevant for the end test mass due to the negligible amount of power transmitted, is an important effet in the input test masses, since it can spoil both he mode matching with the power recycling cavity and the mode overlap between the two arm cavities, thus increasing the contrast defect when the two beams interfere.
+The Advanced LIGO thermal compensation system is designed to compensate for both effect: an infrared annular heater heats the test masses' barrel, reducing the thermal gradient and inducing a thermal stress that compensates the distortion due to the main laser beam. 
 
 \paragraph*{Optical layout}
 The optical layout of Advanced LIGO is different from the initial LIGO layout in several ways. 
