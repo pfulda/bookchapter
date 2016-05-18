@@ -3,7 +3,6 @@
 Despite the extensive research and development effort put forward and the experience acquired over several years on smaller prototypes, it was clear to the gravitational wave community and to the funding agencies that building and operation of km-scale interferometers at their design sensitivity was a high risk, although potentially high gain, endeavor.
 The first generation of interferometers were designed to be relatively simple, reducing the odds of an actual detection but increasing the chances of their successful commissioning and operation.
 The detector infrastructures constituted the bulk of the initial budgets however, and were built to be able to support future upgraded detectors
-%While the infrastructures, by far the largest  in the initial budgets, were built to be able to support future upgraded detectors, the first generation of interferometers were designed to be relatively simple, reducing the odds of an actual detection but increasing the chances of their successful commissioning and operation.
 In particular, while the adopted topology was very similar to the one used in the subsequent generation, the complexity of many subsystems were kept to a minimum in the first generation interferometers.
 
 The initial LIGO detectors\cite{Abbott_2004,Abbott_2009} were power-recycled, Fabry-P\'{e}rot Michelson interferometers.
@@ -16,10 +15,11 @@ which increased the input power seen by the rest of the interferometer by a fact
 
 The vacuum system layout, also designed to accommodate subsequent upgrades of the detectors, was based on a series of vacuum chambers of either of two types: horizontal ones, for the input and output optics, and vertical ones for the core optics.
 Both type are cylinders about 2\,m in diameter and 3\,m in height, with large access ports for easy installation of heavy equipment.
-The corner station at Livingston hosts 6 horizontal chambers, 3 on the input and 3  on the output branch, and 3 vertical chambers, with another two hosted in the end stations.
+The corner station at the Livingston observatory hosts 6 horizontal chambers, 3 on the input and 3  on the output branch, and 3 vertical chambers, with another two hosted in the end stations.
 All chambers, including the ones at the end stations, are connected by 1.2\,m diameter vacuum tubes.
 At Hanford, the need to accommodate a second interferometer required doubling the number of chambers, although most of the vacuum tubes were shared by the two laser beams and only minimal additions were needed to connect the extra chambers.
-Each chamber was equipped with an optical table, passively isolated from seismic vibrations by a 4-stage spring-mass system, providing about 6 orders of magnitude isolation at 100,Hz\cite{Giaime_1996}. Single pendulum suspensions were used to support the most critical optical components, and in particular the 10\,Kg, 25\,cm diameter end mirrors of the Fabry-P\'{e}rot arm cavities, referred to as the input and output test masses; for these optics, the pendulum suspensions provided further 4 orders of magnitude suppression of ground motion at 100\,Hz.
+Each chamber was equipped with an optical table, passively isolated from seismic vibrations by a 4-stage spring-mass system, providing about 6 orders of magnitude isolation at 100\,Hz\cite{Giaime_1996}.
+Single pendulum suspensions were used to support the most critical optical components, and in particular the 10\,Kg, 25\,cm diameter end mirrors of the Fabry-P\'{e}rot arm cavities, referred to as the input and output test masses; for these optics, the pendulum suspensions provided further 4 orders of magnitude suppression of ground motion at 100\,Hz.
 In Livingston, where the ground motion is significantly higher than in Hanford, an out-of-vacuum hydraulic pre-isolation system was added to contribute another factor 10 suppression between 0.1 and 10\,Hz.
 
 Before being decommissioned in 2010 to allow for the installation of the Advanced LIGO hardware, the LIGO detectors were fitted with a number of incremental upgrades\cite{Aasi_2015} meant to improve the sensitivity and allow for prototyping some of the technologies needed for the next generation of instruments.
@@ -27,14 +27,16 @@ The laser power was increased for 10\,W to 35\,W;
 the thermal compensation system, which had been added to the initial detectors to correct for thermal lensing effects, was further improved to better handle the higher circulating power;
 finally, a \textit{DC readout} detection scheme was implemented, in which the interferometer was operated with a slight offset from the dark fringe and the gravitational wave signal was read directly as a modulation of the power on the photodiode.
 This required the installation of an output mode cleaner to filter out the RF control sidebands and higher-order spatial modes of the carrier light.
+This version of the detectors is referred to as Enhanced LIGO (eLIGO), and conducted science operations in 2009 and 2010. 
 
+%ISSUE: there may be important optical differences I'm not aware of
 The VIRGO detector\cite{Accadia_2012}, in Italy, was based on a design similar to that of LIGO, expect with 3\,km Fabry-P\'{e}rot arms cavities. 
 The major difference in Virgo was the adoption of 7-stage, 10\,m tall three dimensional suspensions, named \textit{super-attenuators}, to isolate the input and output test masses.
-The \textit{super-attenuators} were designed to provide at least 10 orders of magnitude isolation from ground motion down to 4 Hz, extending the VIRGO observation band to lower frequencies compared to the other detectors of the same generation. 
-
+The \textit{super-attenuators} were designed to provide at least 10 orders of magnitude isolation down to 4 Hz, extending the VIRGO observation band to lower frequencies compared to the other detectors of the same generation.
 \missingfigure[figwidth=12cm]{Superattenuator CAD drawing here?}
-%TODO: add a bit more details on the superattenuators
-%TODO: add something on Virgo+
+Similar to what was done with LIGO, VIRGO was also equipped with a number of incremental upgrades aimed at improving the sensitivity and testing the maturity of technologies needed for the subsequent version of the detector.
+Most notably, the laser power was increased from 10\,W to 25\,W, a thermal compensation system was added, and the test masses were suspended using fused silica fiber directly bonded to the optics to reduce thermal noise. In this configuration, the instrument was referred to as VIRGO+.
+%REF: Specific reference for VIRGO+?
 
 GEO600\cite{L_ck_2006}, on the other hand, adopted quite different design choices, and pioneered a number of innovative technologies of which several would later be integrated in the larger detectors:
 instead of Faby-P\'{e}rot arm cavities it employed folded arms, a topology in which the end of the arms are occupied by folding mirrors that send the laser back towards the end test masses located close to the beam splitter;
@@ -42,6 +44,7 @@ it was the first detector to employ a signal recycling cavity to shape the gravi
 it also employed DC readout, rather than the more conventional RF homodyne readout~\cite{DCreadout};
 it was the first detector to use monolithic final-stage suspensions of the test-masses~\cite{GEOsilicafibers};
 finally, it was the first to employ squeezing, a technique used to shape quantum fluctuations and obtain a reduction in relative shot noise equivalent to that of a higher power laser~\cite{GEOsqueeze}.
+GEO600 was also the only observatory to remain active during the period in which LIGO and VIRGO were being upgraded to their second generation.
 
 %\begin{figure}[htb]
 %\includegraphics[scale=0.4\textwidth]{}
@@ -56,7 +59,8 @@ It was nevertheless instrumental in developing sensing and control techniques th
 %ISSUE: should this go in history, and keep this section purely tecnical?
 In 2002, the LIGO detectors and GEO600 reached a sensitivity adequate for collecting science data, although still far from the design goal.
 The first science run took place between August and September 2002 with a conventional range, intended as the maximum distance at which a standard NS-NS coalescence could be detected with a signal-to-noise ratio equal to 8, of 100 kpc, more than two orders of magnitude less than the design value of 18 Mpc.
-In the years that followed, LIGO conducted other 5 science runs, interrupted by commissioning periods that steadily and consistently improved the performance until it finally reached full design sensitivity in 2006. In all but one of these science runs, the three LIGO detectors were run in coincidence with one or more other large scale detectors around the world (GEO600, VIRGO and TAMA300) to leverage the superior noise detection and sky localization capabilities of a widely spaced network of detectors\cite{Abbott_2004,Abbott_2005,Abbott_2006,Abbott_2008,Abadie_2010}.
+In the years that followed, LIGO conducted other 5 science runs, interrupted by commissioning periods that steadily and consistently improved the performance until it finally reached full design sensitivity in 2006.
+In all but one of these science runs, the three LIGO detectors were run in coincidence with one or more other large scale detectors around the world (GEO600, VIRGO and TAMA300) to leverage the superior noise rejection and sky localization capabilities of a widely distributed network of detectors\cite{Abbott_2004,Abbott_2005,Abbott_2006,Abbott_2008,Abadie_2010}.
 
 %NOTE: approximate list of runs (including partners):
 %2002: S1 (LIGO + GEO)
