@@ -1,42 +1,46 @@
 \subsection{Design and operation of the first generation of interferometric gravitational wave detectors}\label{subsec:1stgen}
 
-Despite the extensive research and development effort put forward, and the experience acquired over several years on smaller prototypes, it was clear to the gravitational wave community, and to the funding agencies, that building and operation of km-scale interferometers at their design sensitivity was a high risk, although potentially high gain, endeavor.
-While the infrastructures, by far the largest voice in the initial budgets, were built to be able to support future upgraded detectors, the first generation of interferometers were designed to be relatively simple, reducing the odds of an actual detection but increasing the chances of their successful commissioning and operation.
-In particular, while the adopted topology was very similar to the one used in the subsequent generation, the complexity of many subsystems were kept at a minimum.
+Despite the extensive research and development effort put forward and the experience acquired over several years on smaller prototypes, it was clear to the gravitational wave community and to the funding agencies that building and operation of km-scale interferometers at their design sensitivity was a high risk, although potentially high gain, endeavor.
+The first generation of interferometers were designed to be relatively simple, reducing the odds of an actual detection but increasing the chances of their successful commissioning and operation.
+The detector infrastructures constituted the bulk of the initial budgets however, and were built to be able to support future upgraded detectors
+%While the infrastructures, by far the largest  in the initial budgets, were built to be able to support future upgraded detectors, the first generation of interferometers were designed to be relatively simple, reducing the odds of an actual detection but increasing the chances of their successful commissioning and operation.
+In particular, while the adopted topology was very similar to the one used in the subsequent generation, the complexity of many subsystems were kept to a minimum in the first generation interferometers.
 
-The initial LIGO detectors\cite{Abbott_2004,Abbott_2009} were power-recycled, Fabry-Perot interferometers.
+The initial LIGO detectors\cite{Abbott_2004,Abbott_2009} were power-recycled, Fabry-P\'{e}rot Michelson interferometers.
 %REF: reference appropriate section
-An out-of-vacuum, 10\,W, 1064\,nm Nd:YAG pre-stabilized laser was phase modulated to add three sidebands for alignment and sensing control.
-It was then spatially filtered and further stabilized in power and frequency by an in-vacuum input-optics section: this included a 24\,m round-trip suspended triangular optical cavity, referred to as input mode cleaner, a low loss Faraday isolator, and a suspended telescope to match the beam mode to that of the rest of the interferometer.
+An out-of-vacuum, 10\,W, 1064\,nm Nd:YAG pre-stabilized laser was phase modulated to add three sets of sidebands for alignment and sensing control.
+The beam was then spatially filtered and further stabilized in power and frequency by an in-vacuum input-optics section: this included a 24\,m round-trip suspended triangular optical cavity, referred to as input mode cleaner, a low loss Faraday isolator, and a suspended telescope to match the beam mode to that of the rest of the interferometer.
 The beam was then injected into the recycling cavity,
 %REF: reference appropriate section for "recycling cavity"
 which increased the input power seen by the rest of the interferometer by a factor of about 50; finally, the power reached about 20 kW in the impedance matched arm cavities, designed to have a finesse of 220. There was no signal recycling cavity, and the strain signal was obtained using RF readout of the interferometer output.
 
 
-The vacuum system layout, designed to also accommodate subsequent upgrades of the detectors, was based on a series of vacuum chambers of either of two types: horizontal ones, for the input and output optics, and vertical ones for the core optics.
-Both type are cylinders about 2\,m in diameter and 3\,m in length or height, with large access ports for easy installation of heavy equipment.
+The vacuum system layout, also designed to accommodate subsequent upgrades of the detectors, was based on a series of vacuum chambers of either of two types: horizontal ones, for the input and output optics, and vertical ones for the core optics.
+Both type are cylinders about 2\,m in diameter and 3\,m in height, with large access ports for easy installation of heavy equipment.
 The corner station at Livingston hosts 6 horizontal chambers, 3 on the input and 3  on the output branch, and 3 vertical chambers, with another two hosted in the end stations.
 All chambers, including the ones at the end stations, are connected by 1.2\,m diameter vacuum tubes.
-At Handord, the need to accommodate a second interferometer required to double the number of chambers, although most of the vacuum tubes were shared by the two laser beams and only minimal additions were needed to connect the extra chambers.
-Each chamber was equipped with an optical table, passively isolated from seismic vibrations by a 4-stage spring-mass system, providing about 6 orders of magnitude isolation at 100 Hz\cite{Giaime_1996}. Single pendulum suspension were used to support the most critical optical components, and in particular the 10\,Kg, 25\,cm diameter end mirrors of the Fabry-Perot arm cavities, referred to as the input and output test masses; for these optics, the pendulum suspensions provided further 4 orders of magnitude suppression of ground motion at 100 Hz.
-In Livingston, where the ground motion is sensibly higher than in Hanford, an out-of-vacuum pre-isolation system was added to contribute another factor 10 suppression between 0.1 and 10\,Hz.
+At Hanford, the need to accommodate a second interferometer required doubling the number of chambers, although most of the vacuum tubes were shared by the two laser beams and only minimal additions were needed to connect the extra chambers.
+Each chamber was equipped with an optical table, passively isolated from seismic vibrations by a 4-stage spring-mass system, providing about 6 orders of magnitude isolation at 100,Hz\cite{Giaime_1996}. Single pendulum suspensions were used to support the most critical optical components, and in particular the 10\,Kg, 25\,cm diameter end mirrors of the Fabry-P\'{e}rot arm cavities, referred to as the input and output test masses; for these optics, the pendulum suspensions provided further 4 orders of magnitude suppression of ground motion at 100\,Hz.
+In Livingston, where the ground motion is significantly higher than in Hanford, an out-of-vacuum hydraulic pre-isolation system was added to contribute another factor 10 suppression between 0.1 and 10\,Hz.
 
-Before being decommissioned in 2010 to allow for the installation of the Advanced LIGO hardware, the LIGO detectors were equipped with a number of incremental upgrades\cite{Aasi_2015} meant to improve the sensitivity and allow for prototyping some of the technologies needed for the next generation of instruments.
+Before being decommissioned in 2010 to allow for the installation of the Advanced LIGO hardware, the LIGO detectors were fitted with a number of incremental upgrades\cite{Aasi_2015} meant to improve the sensitivity and allow for prototyping some of the technologies needed for the next generation of instruments.
 The laser power was increased for 10\,W to 35\,W;
 the thermal compensation system, which had been added to the initial detectors to correct for thermal lensing effects, was further improved to better handle the higher circulating power;
-finally, a \textit{DC readout} detection scheme was implemented, in which the interferometer was operated with a slight offset from the dark fringe, and the gravitatiaonl wave signal was read directly as a modulation of the power on the photodiode.
-This required the installation of an output mode cleaner to filter the main interferometer laser mode and reject offset and in-band power variations due to spurious light.
+finally, a \textit{DC readout} detection scheme was implemented, in which the interferometer was operated with a slight offset from the dark fringe and the gravitational wave signal was read directly as a modulation of the power on the photodiode.
+This required the installation of an output mode cleaner to filter out the RF control sidebands and higher-order spatial modes of the carrier light.
 
-The VIRGO detector\cite{Accadia_2012}, in Italy, was based on an essentially equivalent design, with the major difference being the adoption of 7-stages, 10\,m tall three dimensional suspensions, named \textit{super-attenuators}, to isolate the input and output test masses.
-The \textit{super-attenuators} were designed to provide at least 10 orders of magnitude isolation from ground motion down to 4 Hz, extending the VIRGO observation band to lower frequencies compared to the other detectors of the same generation.
+The VIRGO detector\cite{Accadia_2012}, in Italy, was based on a design similar to that of LIGO, expect with 3\,km Fabry-P\'{e}rot arms cavities. 
+The major difference in Virgo was the adoption of 7-stage, 10\,m tall three dimensional suspensions, named \textit{super-attenuators}, to isolate the input and output test masses.
+The \textit{super-attenuators} were designed to provide at least 10 orders of magnitude isolation from ground motion down to 4 Hz, extending the VIRGO observation band to lower frequencies compared to the other detectors of the same generation. 
 %TODO: add a bit more details on the superattenuators
 %TODO: add something on Virgo+
 
-GEO600\cite{L_ck_2006}, on the other hand, adopted quite different design choices, and pioneered a number of innovative technologies most of which would later be integrated in the larger detectors:
-instead of Faby-Perrot cavity, it employed folded arms, a topology in which the end of the arms are occupied by folding mirrors that send the laser back towards the end test masses located close to the beam splitter;
-it was the first one to couple a signal recycling cavity to leverage resonant signal extraction;
-it also employed DC readout, rather than the more conventional RF homo-dyne readout;
-finally, it was the first one to employ squeezing, a technique used to shape quantum fluctuations and obtain a reduction in relative shot noise equivalent to that of a higher power laser.
+GEO600\cite{L_ck_2006}, on the other hand, adopted quite different design choices, and pioneered a number of innovative technologies of which several would later be integrated in the larger detectors:
+instead of Faby-P\'{e}rot arm cavities it employed folded arms, a topology in which the end of the arms are occupied by folding mirrors that send the laser back towards the end test masses located close to the beam splitter;
+it was the first detector to employ a signal recycling cavity to shape the gravitational wave signal frequency response~\cite{GEOSRC};
+it also employed DC readout, rather than the more conventional RF homodyne readout~\cite{DCreadout};
+it was the first detector to use monolithic final-stage suspensions of the test-masses~\cite{GEOsilicafibers};
+finally, it was the first to employ squeezing, a technique used to shape quantum fluctuations and obtain a reduction in relative shot noise equivalent to that of a higher power laser~\cite{GEOsqueeze}.
 
 %\begin{figure}[htb]
 %\includegraphics[scale=0.4\textwidth]{}
