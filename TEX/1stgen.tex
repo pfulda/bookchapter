@@ -1,5 +1,5 @@
 \subsection{Design and operation of the first generation of interferometric gravitational wave detectors}\label{subsec:1stgen}
-In this and the following sections we describe the initial generation of ground based gravitational wave detectors and their subsequent major upgrade, often referred to as second generation. While this classification matches closely the upgrade history of the two largest scale interferometers, LIGO and Virgo, this may not necessarily be the case for other detectors that adopted different upgrade strategies or started development later. For these interferometers, the distinction that we make here between first and second - or even future - generations is to some degree arbitrary.
+In this and the following sections we describe the initial generation of ground based gravitational wave detectors and their subsequent major upgrades, often referred to as second generation. While this classification matches closely the upgrade history of the two largest scale interferometers, LIGO and Virgo, this may not necessarily be the case for other detectors that adopted different upgrade strategies or started development later. For these interferometers, the distinction that we make here between first and second - or even future - generations is to some degree arbitrary.
 
 
 Despite the extensive research and development effort put forward and the experience acquired over several years on smaller prototypes, it was clear to the gravitational wave community and to the funding agencies that building and operation of km-scale interferometers at their design sensitivity was a high risk, although potentially high gain, endeavor.
@@ -10,10 +10,10 @@ The detector infrastructures constituted the bulk of the initial budgets however
 The initial LIGO detectors\cite{Abbott_2004,Abbott_2009} were power-recycled, Fabry-P\'{e}rot Michelson interferometers.
 %REF: reference appropriate section
 An out-of-vacuum, 10\,W, 1064\,nm Nd:YAG pre-stabilized laser was phase modulated to add three sets of sidebands for alignment and sensing control.
-The beam was then spatially filtered and further stabilized in power and frequency by an in-vacuum input-optics section: this included a 24\,m round-trip suspended triangular optical cavity, referred to as input mode cleaner, a low loss Faraday isolator, and a suspended telescope to match the beam mode to that of the rest of the interferometer.
+The beam was then spatially filtered and further stabilized in power and frequency by an in-vacuum input-optics section: this included a 24\,m round-trip suspended triangular optical cavity, referred to as input mode cleaner, a Faraday isolator, and a suspended telescope to match the beam mode to that of the rest of the interferometer.
 The beam was then injected into the recycling cavity,
 %REF: reference appropriate section for "recycling cavity"
-which increased the input power seen by the rest of the interferometer by a factor of about 50; finally, the power reached about 20 kW in the impedance matched arm cavities, designed to have a finesse of 220. There was no signal recycling cavity, and the strain signal was obtained using RF readout of the interferometer output.
+which increased the input power seen by the rest of the interferometer by a factor of about 50; finally, the power reached about 20 kW in the arm cavities, designed to have a finesse of 220. There was no signal recycling cavity, and the strain signal was obtained using RF readout of the interferometer output.
 
 The vacuum system layout, also designed to accommodate subsequent upgrades of the detectors, was based on a series of vacuum chambers of either of two types: horizontal ones, for the input and output optics, and vertical ones for the core optics.
 Both type are cylinders about 2\,m in diameter and 3\,m in height, with large access ports for easy installation of heavy equipment.
@@ -21,7 +21,7 @@ The corner station at the Livingston observatory hosts 6 horizontal chambers, 3 
 All chambers, including the ones at the end stations, are connected by 1.2\,m diameter vacuum tubes.
 At Hanford, the need to accommodate a second interferometer required doubling the number of chambers, although most of the vacuum tubes were shared by the two laser beams and only minimal additions were needed to connect the extra chambers.
 Each chamber was equipped with an optical table, passively isolated from seismic vibrations by a 4-stage spring-mass system, providing about 6 orders of magnitude isolation at 100\,Hz\cite{Giaime_1996}.
-Single pendulum suspensions were used to support the most critical optical components, and in particular the 10\,Kg, 25\,cm diameter end mirrors of the Fabry-P\'{e}rot arm cavities, referred to as the input and output test masses; for these optics, the pendulum suspensions provided further 4 orders of magnitude suppression of ground motion at 100\,Hz.
+Single pendulum suspensions were used to support the most critical optical components, and in particular the 10\,kg, 25\,cm diameter end mirrors of the Fabry-P\'{e}rot arm cavities, referred to as the input and output test masses; for these optics, the pendulum suspensions provided further 4 orders of magnitude suppression of ground motion at 100\,Hz.
 In Livingston, where the ground motion is significantly higher than in Hanford, an out-of-vacuum hydraulic pre-isolation system was added to contribute another factor 10 suppression between 0.1 and 10\,Hz.
 
 Before being decommissioned in 2010 to allow for the installation of the Advanced LIGO hardware, the LIGO detectors were fitted with a number of incremental upgrades\cite{Aasi_2015} meant to improve the sensitivity and allow for prototyping some of the technologies needed for the next generation of instruments.
@@ -31,14 +31,14 @@ finally, a \textit{DC readout} detection scheme was implemented, in which the in
 This required the installation of an output mode cleaner to filter out the RF control sidebands and higher-order spatial modes of the carrier light.
 This version of the detectors is referred to as Enhanced LIGO (eLIGO), and conducted science operations in 2009 and 2010. 
 
-The Virgo detector\cite{Accadia_2012}, in Italy, was based on a design similar to that of LIGO, except with 3\,km Fabry-P\'{e}rot arms cavities. 
+The Virgo detector\cite{Accadia_2012}, in Italy, was based on a design similar to that of LIGO, except with 3\,km Fabry-P\'{e}rot arm cavities. 
 The major difference in Virgo was the adoption of 7-stage, 10\,m tall three dimensional suspensions, named \textit{super-attenuators}, to isolate the input and output test masses.
-A 3D model fo the superattenuator is depicted in \fref{fig:superattenuator}. The first stage is an inverted pendulum platform providing isolation at very low frequencies (about 30\,mHz) and actuation capabilities for coarse alignment and compensation of tidal effects.
+A 3D model of the super-attenuator is depicted in \fref{fig:superattenuator}. The first stage is an inverted pendulum platform providing isolation at very low frequencies (about 30\,mHz) and actuation capabilities for coarse alignment and compensation of tidal effects.
 From this platform hangs a chain of five cascaded single-wire pendula, each about 1\,m long; the mass of each pendulum, as well as the inverted pendulum stage, integrates a mechanical filter that provides vertical isolation for the suspension point of the subsequent stage; the vertical isolation is realized by supporting the suspension point with an array of pre-curved triangular steel blades which lay flat under the load and provide a vertical resonant frequency at about 1.5\,Hz.
 The overall vertical resonant frequency is further lowered to below 0.5\,Hz by the adoption of magnetic anti-springs.
-The payload is comprised of the test mass and a reaction mass, an hollow cylinder concentric with the test mass used a quite reference point for actuation on the mirror. Both are suspended to a crossbar, called the \textit{marionette}, via two loops of wire each.
+The payload is composed of the test mass and a reaction mass; a hollow cylinder concentric with the test mass used as a quiet reference point for actuation on the mirror. Both are suspended to a crossbar, called the \textit{marionette}, via two loops of wire each.
 The marionette is equipped with actuators that allow it, and consequently the payload, to be steered with respect to the above suspension stage. 
-The \textit{super-attenuators} were designed to provide at least 10 orders of magnitude isolation down to 4 Hz, extending the Virgo observation band to lower frequencies compared to the other detectors of the same generation.
+The super-attenuators were designed to provide at least 10 orders of magnitude isolation down to 4 Hz, extending the Virgo observation band to lower frequencies compared to the other detectors of the same generation.
 A shorter and simplified version of the superattenuator was used to suspend optical benches for less critical optics.
 
 \begin{figure}
@@ -46,8 +46,8 @@ A shorter and simplified version of the superattenuator was used to suspend opti
 	\caption{\label{fig:superattenuator}A 3D model of the Virgo superattenuator}
 \end{figure}
 
-Similar to what was done with LIGO, Virgo was also equipped with a number of incremental upgrades aimed at improving the sensitivity and testing the maturity of technologies needed for the subsequent version of the detector.
-Most notably, the laser power was increased from 10\,W to 25\,W, a thermal compensation system was added, and the test masses were suspended using fused silica fiber directly bonded to the optics to reduce thermal noise\cite{Lorenzini_2010}.
+In a similar fashion as with LIGO, Virgo was also equipped with a number of incremental upgrades aimed at improving the sensitivity and testing the maturity of technologies needed for the subsequent version of the detector.
+Most notably, the laser power was increased from 10\,W to 25\,W, a thermal compensation system was added, and the test masses were suspended using fused silica fibers directly bonded to the optics to reduce thermal noise\cite{Lorenzini_2010}.
 In this configuration, the instrument was referred to as Virgo+.
 %REF: Specific reference for VIRGO+?
 
@@ -66,12 +66,12 @@ GEO600 was also the only observatory to remain active during the period in which
 \end{figure}
 
 
-TAMA300\cite{Ando_2002}, in Japan, also adopted an optical layout similar to LIGO and VIRGO, although its smaller size and location in Tokyo severely limited its sensitivity below a a few hundred Hz.
-It was nevertheless instrumental in developing sensing and control techniques that would be later transferred to the larger interferometers. 
+TAMA300\cite{Ando_2002}, in Japan, also adopted an optical layout similar to LIGO and VIRGO, although its smaller size and location in Tokyo severely limited its sensitivity below a few hundred Hz.
+It nevertheless provided many useful results, including the development of sensing and control techniques that would be later transferred to the larger interferometers. 
 The CLIO detector, also in Japan but situated in the Kamioka mine, began construction in 2003 and was eventually operated with cryogenically cooled test masses and demonstrated a reduced thermal noise level from the room temperature~\cite{Uchiyama_2012}. However, with relatively short arm lengths of 100\,m CLIO could not come close to the strain sensitivities of the larger detectors.
 
 In 2002, the LIGO detectors and GEO600 reached a sensitivity adequate for collecting science data, although still far from the design goal.
-The first science run took place between August and September 2002 with a conventional range, intended as the maximum distance at which a standard NS-NS coalescence could be detected with a signal-to-noise ratio equal to 8, of 100 kpc, more than two orders of magnitude less than the design value of 18 Mpc.
+The first science run took place between August and September 2002 with a conventional range (defined as the maximum distance at which an optimally oriented standard NS-NS coalescence could be detected with a signal-to-noise ratio equal to 8) of 100\,kpc; more than two orders of magnitude less than the design value of 18\,Mpc.
 In the years that followed, LIGO conducted other 5 science runs, interrupted by commissioning periods that steadily and consistently improved the performance until it finally reached full design sensitivity in 2006.
 In all but one of these science runs, the three LIGO detectors were run in coincidence with one or more other large scale detectors around the world (GEO600, Virgo and TAMA300) to leverage the superior noise rejection and sky localization capabilities of a widely distributed network of detectors\cite{Abbott_2004,Abbott_2005,Abbott_2006,Abbott_2008,Abadie_2010}.
 
