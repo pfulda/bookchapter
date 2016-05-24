@@ -27,10 +27,10 @@ other critical optics from ground vibrations and other macroscopic motions, and 
 that the they can move as free masses in the relevant degree of freedom above a few Hz.
 
 In Advanced LIGO, the test masses are suspended by four-stage pendula, known as the quad suspensions\cite{Aston_2012}. 
-From top to bottom, the main suspension chain is composed of two metal masses, and two optics 
-of the same shape and size, the lowermost one being the test mass.
+From top to bottom, the main suspension chain is composed of two metal masses, and two 40\,kg cylindrical fused silica substrates
+of 34\,cm diameter and 20\,cm thickness, the lowermost one being the test mass.
 The first metal mass is attached to the suspension structure by four blade springs providing vertical isolation;
-steel wires run from the tip of the blades to the 
+a steel wire runs from the tip of each blade to the 
 suspended mass.
 In a similar fashion, the second metal mass is attached to the first one, 
 and so is the penultimate mass; itself actually a fused silica substrate of equal dimensions to the test masses themselves. 
@@ -41,7 +41,7 @@ The monolithic suspension design offers reduced mechanical losses, and
 consequently lower thermal noise, than the previously used metal wire suspensions.
 The pendulum resonances of the four stages are 
 distributed between 1 and 4 Hz, providing a passive suppression of motion along 
-the optical axis by $10^7$ at 10\,Hz, and going up as the frequency to the eighth power.
+the optical axis by $10^7$ at 10\,Hz and improving as the frequency to the eighth power.
 
 A similar chain of masses called the reaction chain hangs parallel to the main one, 
 and supports the sensors and actuators used for local damping and active positioning and alignment control 
@@ -54,7 +54,7 @@ by the global interferometry; on the end test mass, the actuators consist of pat
 deposited on the last mass of the reaction chain, which exert electrostatic forces on the test mass when polarized.
 This avoids the need of attaching magnets to the test masses, thus maintaining low mechanical 
 losses and reducing possible couplings to external fields.
-The last stage of the reaction chain on the input test mass suspension has no actuators at all, and is instead used as the compensation plate for the thermal compensation system.
+The last stage of the reaction chain on the input test mass suspension has no actuators at all, and is instead used as the \textit{compensation plate} for the thermal compensation system.
 
 Each quad suspension is attached to an in-vacuum seismic isolation platform, 
 used for further suppression of ground vibrations and precise positioning and 
@@ -87,11 +87,11 @@ This beam is then pre-stabilized in frequency with respect to a fixed spacer cav
 The beam from the pre-stabilized laser is also passed through a pre-mode cleaner ring cavity, which filters the spatial mode of the laser ensuring a high-purity Gaussian beam profile. 
 The beam is then handed off to the Input Optics subsystem, where phase modulation sidebands are applied and the power of the beam is controlled, before the beam is passed to the in-vacuum suspended input mode cleaner cavity~\cite{Mueller_2016}. 
 This cavity serves to further filter the beam in both frequency and spatial mode, passively suppressing any beam jitter of the pre-stabilized laser beam from non-isolated optical components. 
-The beam transmitted from the input mode cleaner is then passed through a Faraday isolator, before being exapnded and matched to the 
+The beam transmitted from the input mode cleaner is then passed through a Faraday isolator, before being expanded and matched to the 
 main interferometer mode.
 
 \paragraph*{Thermal compensation system}
-Despite the stringent requirement on the optical absorption of bulk and coating 
+Despite the stringent requirements on the optical absorption of bulk and coating 
 material of the optics, the high power levels circulating in the interferometer result 
 in a non-negligible amount of heat deposited into the optics.
 Due to the poor heat conduction in vacuum, this induces important thermal gradients that can modify 
@@ -102,9 +102,9 @@ HR surface distortion is particularly important for the input and end test masse
 Thermal lensing, while irrelevant for the end test mass due to the negligible amount of power transmitted, is an important effect in the input test masses, since it can spoil both the mode matching with the power recycling cavity and the mode overlap between the two arm cavities, thus decreasing the contrast when the two beams interfere.
 
 The Advanced LIGO thermal compensation system is designed to monitor and compensate for both effects across the entire range of operating powers, and constitutes a substantial improvement over the much simpler implementation used in eLIGO.
-To sense the thermal distortion, each of the four input and end test masses is monitored using a custom Hartman wavefront sensors, which uses an auxiliary superluminescent diode beam injected from the anti-reflection face of the optic and reflected back from the HR side (thus crossing the optic twice).
-To correct for HR surface distortions, an infrared annular heater heats the barrels of the test masses, reducing the thermal gradient and inducing a thermal stress that counteracts the effect of central heating due to the main laser beam.
-Finally, a CO$_2$ laser projector is used to impress a suitable pattern on the compensation plate, deliberately creating a thermal lens that compensates for the lens left in the input test mass after the combined effects of the science beam and the annular heater\cite{TCS_inpreparation}.
+To sense the thermal distortion, each of the four input and end test masses is monitored using a custom Hartman wavefront sensors, which uses an auxiliary superluminescent diode beam injected from the anti-reflection face of the optic and reflected back from the HR side (thus traversing the optic twice).
+To correct for HR surface distortions, an infrared annular heater heats the barrels of the test masses, reducing the thermal gradient and inducing a thermal stress that counteracts the effect of the central heating due to the main laser beam.
+Finally, a CO$_2$ laser projector is used to impress a suitable pattern on the compensation plate, deliberately creating a thermal lens that compensates for the lens left in the input test mass after the combined effects of the science beam and the annular heater~\cite{TCS_inpreparation}.
 
 \paragraph*{Optical layout}
 The optical layout of Advanced LIGO is different from the initial LIGO layout in several ways. 
@@ -112,8 +112,8 @@ The most fundamental change to the optical layout is the addition of a signal re
 mirror between the anti-symmetric side of the beam splitter and the optical detection port. 
 In its current configuration this oft-called signal recycling mirror is actually tuned such as to 
 increase the bandwidth of the detector, rather than increasing the quantum noise-limited sensitivity
-in a narrow band as the name \emph{recycling} implies. As such, a more apposite name for this mirror 
-in the current configuration is signal \emph{extraction} mirror. 
+in a narrow band as the name \textit{recycling} implies. As such, a more apposite name for this mirror 
+in the current configuration is signal \textit{extraction} mirror. 
 
 The signal extraction mirror forms a new cavity within Advanced LIGO; which is still called the signal recycling cavity. 
 Both the signal recycling cavity and the power recycling cavity in Advanced LIGO are designed to be 
@@ -144,7 +144,7 @@ The output mode cleaner has the essential function of removing RF sidebands and 
 A great effort was made in the upgrade to Advanced LIGO to make the lock acquisition process more deterministic than stochastic.
 Part of this effort was the inclusion of the arm length stabilization (ALS) subsystem.
 This subsystem uses green frequency-doubled Nd:YAG beams which are phased locked to the main laser to independently control the arm cavities during lock acquisition of the central dual-recycled Michelson interferometer (DRMI)~\cite{Staley2014}.
-Once the DRMI is locked the ALS can be used methodically bring the arms to resonance, bringing the full interferometer to the ideal operating point. 
+Once the DRMI is locked the ALS can be used to methodically bring the arms to resonance, bringing the full interferometer to the ideal operating point. 
 The arm length sensing can be handed off to the main interferometric sensors, once the ALS has brought the interferometer within their linear range.
 
 \paragraph*{Interferometric sensing and control}
@@ -153,7 +153,7 @@ The practical consequence of this fact, when combined with the fact that even wi
 mirror motions at low frequencies can be of the order several wavelengths, is that length control loops are essential in order 
 to keep the interferometer operating with high sensitivity. 
 
-The length sensing of all interferometric ground-based GW detectors is based on the Pound-Drever-Hall (PDH) laser 
+The length sensing of all interferometric ground-based gravitational wave detectors is based on the Pound-Drever-Hall (PDH) laser 
 frequency stabilization scheme~\cite{PDH}. 
 In this scheme an electro-optic modulator is used to add RF phase modulation sidebands to the laser, 
 which are typically non-resonant in an optical cavity when the carrier light is resonant.
@@ -165,9 +165,9 @@ from the cavity is detected with a photodetector and demodulated at the original
 signal for either the cavity length control or the laser frequency control. 
 
 While the PDH scheme described above describes the sensing of just one length (or frequency) degree of freedom, 
-the core interferometers of 2nd generation ground-based GW detectors require 5 distinct length degrees of freedom to 
+the core interferometers of 2nd generation ground-based gravitational wave detectors require 5 distinct length degrees of freedom to 
 be sensed and controlled. Typically these degrees of freedom are broken down into the following list: common arm length, 
-differential arm length (where the GW signal predominantly appears), Michelson tuning, power recycling cavity length and 
+differential arm length (where the gravitational wave signal predominantly appears), Michelson tuning, power recycling cavity length and 
 signal recycling cavity length. In reality at least two additional degrees of freedom must be controlled; one each for the input 
 and output mode cleaner cavities. This presents a formidable challenge, which was solved for Advanced LIGO by the use of two 
 different modulation frequencies, at roughly 9\,MHz and 45\,MHz. The 9\,MHz sidebands are resonant in the power recycling 
@@ -176,7 +176,7 @@ good length sensing signals for the arm degrees of freedom, as well as the power
 are resonant in both power and signal recycling cavities, and experience a bright Michelson fringe. As a result, the detectors demodulated 
 at 45\,MHz provide good sensitivity to signal recycling cavity length and the small Michelson degrees of freedom.
 
-The alignment of optics must also be sensed and controlled in GW detectors. In aLIGO the sensing is currently achieved using a method 
+The alignment of optics must also be sensed and controlled in gravitational wave detectors. In aLIGO the sensing is currently achieved using a method 
 called differential wavefront sensing, developed by Henry Ward and colleagues~\cite{Morrison1994, Morrison1994b}. 
 This method is similar in principle to the PDH length sensing, 
 except that quadrant photodectors are used 
@@ -190,7 +190,7 @@ is provided in~\cite{Fritschel1998}.
 %ISSUE: I think we need to expand this...
 At the time of writing, Advanced Virgo is still in the process of installing upgrades and commissioning. 
 The superattenuator test-mass suspensions in Virgo already performed extremely well for suppressing the coupling of ground motion to test-mass motion, and so upgrades in this area were minimal.
-The laser power is being increased in order to reduce the increase the shot noise sensitivity of the detector, and new test-masses with low mechanical loss coatings are being installed.
+The laser power is being increased in order to improve the shot noise sensitivity of the detector, and new test-masses with low mechanical loss coatings are being installed.
 The optical layout is very similar to Advanced LIGO, being a dual-recycled Fabry-P\'{e}rot Michelson interferometer employing DC readout with an output mode cleaner.
 Due to restrictions in available vacuum enclosure space, however, stable recycling cavities were not a feasible design option for Advanced Virgo. 
 
