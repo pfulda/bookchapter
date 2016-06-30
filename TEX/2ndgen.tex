@@ -1,4 +1,4 @@
-\subsection{Design and operation of the second generation of interferometric gravitational wave detectors}\label{subsec:2ndgen}
+\section{Design and operation of the second generation of interferometric gravitational wave detectors}\label{subsec:2ndgen}
 
 Even while the initial LIGO and Virgo detectors were still far from their design sensitivities, plans were afoot for major  upgrades to each, aimed at achieving roughly a factor 10 improvement in sensitivity over the whole frequency band. 
 This generation of detectors would be known as the 2nd generation, or the advanced detectors; Advanced LIGO and 
@@ -10,7 +10,7 @@ limited by fundamental noises: thermal noise and quantum noise (a combination of
 and laser shot noise).
 As a consequence, all other possible sources of noise needed to be pushed well below these main ones.
 
-\subsubsection{Advanced LIGO}
+\subsection{Advanced LIGO}
 %TODO: reference in text
 \begin{figure}[htb]
 	\begin{center}
@@ -19,7 +19,7 @@ As a consequence, all other possible sources of noise needed to be pushed well b
 	\end{center}
 \end{figure}
 
-\paragraph*{Suspensions and seismic isolation.}
+\subsubsection{Suspensions and seismic isolation.}
 Two of the subsystems that were significantly upgraded from LIGO to Advanced LIGO
 were the Seismic Isolation\cite{SEI2015} and Suspension subsystems. Although they 
 are formally two separate subsystems, they work in concert to isolate the test-masses and 
@@ -75,7 +75,7 @@ flexible bellows, and supported from the outside using hydraulic actuated
 piers anchored to ground.
 This system acts as a further layer of isolation and is used to predictively correct for macroscopic positioning drifts caused by tidal forces from the moon and the sun.
 
-\paragraph*{Laser}
+\subsubsection{Laser}
 At frequencies above about 100\,Hz, the interferometer sensitivity is limited by shot 
 noise in the laser. The relative impact of the shot noise scales as the inverse of the 
 square root of the power: increasing the laser power is thus a conceptually 
@@ -90,7 +90,7 @@ This cavity serves to further filter the beam in both frequency and spatial mode
 The beam transmitted from the input mode cleaner is then passed through a Faraday isolator, before being expanded and matched to the 
 main interferometer mode.
 
-\paragraph*{Thermal compensation system}
+\subsubsection{Thermal compensation system}
 Despite the stringent requirements on the optical absorption of bulk and coating 
 material of the optics, the high power levels circulating in the interferometer result 
 in a non-negligible amount of heat deposited into the optics.
@@ -99,14 +99,14 @@ the optical parameters of the system via two main effects: thermal lensing in th
 bulk material due to the temperature dependence of the refractive index,
 and distortion of the high reflectivity (HR) surface of the mirrors due to thermo-mechanical stress.
 HR surface distortion is particularly important for the input and end test masses, both because they see the highest power level of all the interferometer optics (up to about 1\,MW), and because any deformation of their surface has a bigger impact on the interferometer output.
-Thermal lensing, while irrelevant for the end test mass due to the negligible amount of power transmitted, is an important effect in the input test masses, since it can spoil both the mode matching with the power recycling cavity and the mode overlap between the two arm cavities, thus decreasing the contrast when the two beams interfere.
+Thermal lensing, while irrelevant for the end test mass due to the secondary role of the weak transmitted diagnostic beam, is an important effect in the input test masses, since it can spoil both the mode matching with the power recycling cavity and the mode overlap between the two arm cavities, thus decreasing the overall contrast of the interferometer.
 
 The Advanced LIGO thermal compensation system is designed to monitor and compensate for both effects across the entire range of operating powers, and constitutes a substantial improvement over the much simpler implementation used in eLIGO.
 To sense the thermal distortion, each of the four input and end test masses is monitored using a custom Hartman wavefront sensors, which uses an auxiliary superluminescent diode beam injected from the anti-reflection face of the optic and reflected back from the HR side (thus traversing the optic twice).
 To correct for HR surface distortions, an infrared annular heater heats the barrels of the test masses, reducing the thermal gradient and inducing a thermal stress that counteracts the effect of the central heating due to the main laser beam.
 Finally, a CO$_2$ laser projector is used to impress a suitable pattern on the compensation plate, deliberately creating a thermal lens that compensates for the lens left in the input test mass after the combined effects of the science beam and the annular heater~\cite{TCS_inpreparation}.
 
-\paragraph*{Optical layout}
+\subsubsection{Optical layout}
 The optical layout of Advanced LIGO is different from the initial LIGO layout in several ways. 
 The most fundamental change to the optical layout is the addition of a signal recycling 
 mirror between the anti-symmetric side of the beam splitter and the optical detection port. 
@@ -147,7 +147,7 @@ This subsystem uses green frequency-doubled Nd:YAG beams which are phased locked
 Once the DRMI is locked the ALS can be used to methodically bring the arms to resonance, bringing the full interferometer to the ideal operating point. 
 The arm length sensing can be handed off to the main interferometric sensors, once the ALS has brought the interferometer within their linear range.
 
-\paragraph*{Interferometric sensing and control}
+\subsubsection{Interferometric sensing and control}
 The dual-recycled Fabry-P\'{e}rot Michelson interferometer that makes up aLIGO has a very narrow linear range. 
 The practical consequence of this fact, when combined with the fact that even with the advanced seismic isolation systems typical 
 mirror motions at low frequencies can be of the order several wavelengths, is that length control loops are essential in order 
@@ -164,7 +164,7 @@ carrier light, and the total reflected light
 from the cavity is detected with a photodetector and demodulated at the original modulation frequency to give an error 
 signal for either the cavity length control or the laser frequency control. 
 
-While the PDH scheme described above describes the sensing of just one length (or frequency) degree of freedom, 
+While the PDH scheme described above refers to the sensing of just one length (or frequency) degree of freedom, 
 the core interferometers of 2nd generation ground-based gravitational wave detectors require 5 distinct length degrees of freedom to 
 be sensed and controlled. Typically these degrees of freedom are broken down into the following list: common arm length, 
 differential arm length (where the gravitational wave signal predominantly appears), Michelson tuning, power recycling cavity length and 
@@ -186,11 +186,13 @@ spatial modes of the sidebands would be co-resonant in some of the optical cavit
 A detailed description of the alignment requirements of a gravitational wave detector, and a sensing scheme based on the wavefront sensing 
 is provided in~\cite{Fritschel1998}.
 
-\subsubsection{Advanced Virgo}
+\subsection{Advanced Virgo}
 %ISSUE: I think we need to expand this...
 At the time of writing, Advanced Virgo is still in the process of installing upgrades and commissioning. 
 The superattenuator test-mass suspensions in Virgo already performed extremely well for suppressing the coupling of ground motion to test-mass motion, and so upgrades in this area were minimal.
+
 The laser power is being increased in order to improve the shot noise sensitivity of the detector, and new test-masses with low mechanical loss coatings are being installed.
+
 The optical layout is very similar to Advanced LIGO, being a dual-recycled Fabry-P\'{e}rot Michelson interferometer employing DC readout with an output mode cleaner.
 Due to restrictions in available vacuum enclosure space, however, stable recycling cavities were not a feasible design option for Advanced Virgo. 
 
