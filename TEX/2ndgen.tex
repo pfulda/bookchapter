@@ -1,30 +1,24 @@
 \section{Design and operation of the second generation of interferometric gravitational wave detectors}\label{subsec:2ndgen}
+%NOTE: check if aVirgo and aLIGO description papaer are cited 
+Even while the initial LIGO and Virgo detectors were still far from their design sensitivities, plans were afoot for major upgrades to each, aimed at achieving roughly a factor 10 improvement in sensitivity over the whole frequency band. 
+This generation of detectors would be known as the 2nd generation, or the advanced detectors; Advanced LIGO and Advanced Virgo. 
 
-Even while the initial LIGO and Virgo detectors were still far from their design sensitivities, plans were afoot for major  upgrades to each, aimed at achieving roughly a factor 10 improvement in sensitivity over the whole frequency band. 
-This generation of detectors would be known as the 2nd generation, or the advanced detectors; Advanced LIGO and 
-Advanced Virgo. 
-
-Besides generally targeting a factor 10 overall improvement in sensitivity, and an expansion of the sensitive 
-frequency band towards lower frequencies, the design of the advanced detectors was aimed at making them 
-limited by fundamental noises: thermal noise and quantum noise (a combination of quantum radiation pressure noise 
-and laser shot noise).
+Besides generally targeting a factor 10 overall improvement in sensitivity, and an expansion of the sensitive frequency band towards lower frequencies, the design of the advanced detectors was aimed at making them limited by fundamental noises: thermal noise and quantum noise (acombination of quantum radiation pressure noise and laser shot noise).
 As a consequence, all other possible sources of noise needed to be pushed well below these main ones.
+As an example, \autoref{fig:aLIGOnbudget} shows the main contributions to the Advanced LIGO design noise budget, together with the seinsitivity of the Hanford and Livingston detectors during their first observing run.
 
-\subsection{Advanced LIGO}
-%TODO: reference in text
+Given the many similarities between the LIGO and VIRGO projects, and the fact that, at the time of writing, Advanced Virgo is still in the process of installing upgrades and commissioning, in this chapter we will concentrate on a description of the Advanced LIGO layout and main subsystem, highlighting the most relevant differences with Advanced Virgo.
+
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{aLIGOnbudget_gray.pdf}
-		\caption{\label{fig:aLIGOnbudget}Predicted strain equivalent spectral densities for major noise sources in Advanced LIGO at full input laser power. Also shown are the typical strain sensitivities of the Hanford and Livingston detectors throughout the O1 run, during which the first direct detection of gravitational waves was made.}
+		\caption{\label{fig:aLIGOnbudget}Predicted strain equivalent spectral densities for major noise sources in Advanced LIGO at full input laser power. Also shown are the typical strain sensitivities of the Hanford and Livingston detectors throughout the O1 run, from September 2015 to January 2016, during which the first direct detection of gravitational waves was made.}
 	\end{center}
 \end{figure}
 
-\subsubsection{Suspensions and seismic isolation.}
-Two of the subsystems that were significantly upgraded from LIGO to Advanced LIGO
-were the Seismic Isolation\cite{SEI2015} and Suspension subsystems. Although they 
-are formally two separate subsystems, they work in concert to isolate the test-masses and 
-other critical optics from ground vibrations and other macroscopic motions, and ensure 
-that the they can move as free masses in the relevant degree of freedom above a few Hz.
+\subsection{Suspensions and seismic isolation.}
+While the Virgo superattenuator test-mass suspensions, described in \autoref{sec:Virgo}, already performed extremely well and only required minimal modifications, two of the subsystems that were most significantly upgraded from LIGO to Advanced LIGO were the Seismic Isolation\cite{SEI2015} and Suspension subsystems.
+Although they are formally two separate subsystems, they work in concert to isolate the test-masses and  other critical optics from ground vibrations and other macroscopic motions, and ensure that the they can move as free masses in the relevant degree of freedom above a few Hz.
 
 In Advanced LIGO, the test masses are suspended by four-stage pendula, known as the quad suspensions\cite{Aston_2012}. 
 From top to bottom, the main suspension chain is composed of two metal masses, and two 40\,kg cylindrical fused silica substrates
@@ -75,7 +69,8 @@ flexible bellows, and supported from the outside using hydraulic actuated
 piers anchored to ground.
 This system acts as a further layer of isolation and is used to predictively correct for macroscopic positioning drifts caused by tidal forces from the moon and the sun.
 
-\subsubsection{Laser}
+	
+\subsection{Laser}
 At frequencies above about 100\,Hz, the interferometer sensitivity is limited by shot 
 noise in the laser. The relative impact of the shot noise scales as the inverse of the 
 square root of the power: increasing the laser power is thus a conceptually 
@@ -90,7 +85,9 @@ This cavity serves to further filter the beam in both frequency and spatial mode
 The beam transmitted from the input mode cleaner is then passed through a Faraday isolator, before being expanded and matched to the 
 main interferometer mode.
 
-\subsubsection{Thermal compensation system}
+Advanced Virgo employs a similar system, although with a slightly different technological implementation, to deliver up to 125\,W into the main interferometer. Despite the lower input power, the circulating power in the arm cavities in about the same as in Advanced LIGO, due to different gains in the power recycling and arm cavities.
+
+\subsection{Thermal compensation system}
 Despite the stringent requirements on the optical absorption of bulk and coating 
 material of the optics, the high power levels circulating in the interferometer result 
 in a non-negligible amount of heat deposited into the optics.
@@ -106,7 +103,9 @@ To sense the thermal distortion, each of the four input and end test masses is m
 To correct for HR surface distortions, an infrared annular heater heats the barrels of the test masses, reducing the thermal gradient and inducing a thermal stress that counteracts the effect of the central heating due to the main laser beam.
 Finally, a CO$_2$ laser projector is used to impress a suitable pattern on the compensation plate, deliberately creating a thermal lens that compensates for the lens left in the input test mass after the combined effects of the science beam and the annular heater~\cite{TCS_inpreparation}.
 
-\subsubsection{Optical layout}
+The main difference in the Advanced Virgo implementation of the Thermal Compensation System is the addition of a scanning CO2 projector, which compared to a fixed-mask one promises greater flexibility and adaptability of the shape of the projected pattern.
+
+\subsection{Optical layout}
 The optical layout of Advanced LIGO is different from the initial LIGO layout in several ways. 
 The most fundamental change to the optical layout is the addition of a signal recycling 
 mirror between the anti-symmetric side of the beam splitter and the optical detection port. 
@@ -147,7 +146,9 @@ This subsystem uses green frequency-doubled Nd:YAG beams which are phased locked
 Once the DRMI is locked the ALS can be used to methodically bring the arms to resonance, bringing the full interferometer to the ideal operating point. 
 The arm length sensing can be handed off to the main interferometric sensors, once the ALS has brought the interferometer within their linear range.
 
-\subsubsection{Interferometric sensing and control}
+The optical layout of Advanced Virgo is very similar to that of Advanced LIGO, although restrictions in available vacuum enclosure space prevent the use of stable recycling cavities. In addition, no equivalent of the arm length stabilization system was included int he baseline Advanced Virgo design.
+
+\subsection{Interferometric sensing and control}
 The dual-recycled Fabry-P\'{e}rot Michelson interferometer that makes up aLIGO has a very narrow linear range. 
 The practical consequence of this fact, when combined with the fact that even with the advanced seismic isolation systems typical 
 mirror motions at low frequencies can be of the order several wavelengths, is that length control loops are essential in order 
@@ -185,17 +186,7 @@ alternative method developed by Dana Anderson was used in Virgo, whereby the sid
 spatial modes of the sidebands would be co-resonant in some of the optical cavities with the carrier fundamental mode~\cite{Anderson1984}. 
 A detailed description of the alignment requirements of a gravitational wave detector, and a sensing scheme based on the wavefront sensing 
 is provided in~\cite{Fritschel1998}.
-
-\subsection{Advanced Virgo}
-%ISSUE: I think we need to expand this... or take it out alltogether
-At the time of writing, Advanced Virgo is still in the process of installing upgrades and commissioning. 
-The superattenuator test-mass suspensions in Virgo already performed extremely well for suppressing the coupling of ground motion to test-mass motion, and so upgrades in this area were minimal.
-
-The laser power is being increased in order to improve the shot noise sensitivity of the detector, and new test-masses with low mechanical loss coatings are being installed.
-
-The optical layout is very similar to Advanced LIGO, being a dual-recycled Fabry-P\'{e}rot Michelson interferometer employing DC readout with an output mode cleaner.
-Due to restrictions in available vacuum enclosure space, however, stable recycling cavities were not a feasible design option for Advanced Virgo. 
-
+%NOTE: this si not great, since the reference appears as a subscript
 
 %\item Sesmic isolation upgrade?
 %\item Laser power upgrade

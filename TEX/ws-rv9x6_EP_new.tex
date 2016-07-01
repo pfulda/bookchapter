@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For support : Yolande Koh, <ykoh@wspc.com.sg>                        %%
+%% Review Volume (last updated on 20-4-2015)                            %%
+%% Trim Size: 9in x 6in                                                 %%
+%% Text Area: 7.35in (include runningheads) x 4.5in                     %%
+%% Main Text: 10 on 13pt                                                %%
+%% Technical Support: D. Rajesh Babu, <rajesh@wspc.com.sg>              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% My packages
+\documentclass[master]{ws-rv9x6} % 'master' to combine all chapters
+
+%\usepackage{subfigure}   % required only when side-by-side / subfigures are used
+\usepackage{ws-rv-thm}   % comment this line when `amsthm / theorem / ntheorem` package is used
+\usepackage[square]{ws-rv-van}   % numbered citation & references (default)
+\usepackage{ws-index}     % required only when multiple indexes are used
+\usepackage{booktabs}	 % professional-looking tables
+\usepackage{bm}
+\usepackage{color}
+%\usepackage[square]{ws-rv-van}   % numbered citation & references (default)
+\usepackage[colorlinks]{hyperref}
+\usepackage[final ]{pdfpages}  % required for include PDF
+\newindex{aindx}{adx}{and}{Author Index}       % author index
+%\renewindex{default}{idx}{ind}{Subject Index}  % subject index
+%\renewindex{idx}{ind}{Subject Index}  % subject index
+
+%\usepackage[pdfpagelabels=false]{hyperref}  % \label, \ref and \cite are recommended
+
+\usepackage{import} % Define import
+
+\makeindex % What does this do ?
+
+\definecolor{darkblue}{rgb}{0,0,0.3}
+\hypersetup{citecolor=darkblue}
+\hypersetup{linkcolor=darkblue}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro definitions here
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\renewcommand{\c}{\,,}
+\newcommand{\p}{\,.}
+\def\varM{\mathcal{M}}
+\def\calO{\mathcal{O}}
+\def\ud{\mathrm{d}}
+\def\ui{\mathrm{i}}
+\def\n{\nabla\!}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\jn}[1]{\textbf{\textcolor{green}{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --------------- user defined commands --------------
+
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\ddt}[1]{\frac{\partial #1}{\partial t}}
+\newcommand{\eff}{_{\text{eff}}}
+\newcommand\stxt[1]{_{\text{#1}}} % subscript
+\newcommand\STXT[1]{^{\text{#1}}} % superscript
+\newcommand{\ms}{\ \text{ms}}
+\newcommand{\m}{\ \text{m}}
+\newcommand{\nK}{\ \text{nK}}
+\newcommand{\Hz}{\ \text{Hz}}
+\newcommand{\kHz}{\ \text{kHz}}
+\newcommand{\micron}{\ \mu\text{m}}
+\newcommand{\rad}{\ \text{rad}}
+\newcommand{\sqrtHz}{/\sqrt{\text{Hz}}}
+
+\newcommand{\lambdabar}{\mbox{\makebox[-0.5ex][l]{$\lambda$} \raisebox{0.7ex}[0pt][0pt]{--}}}
+\newcommand{\aap}{{Astron. Astrophys.}}
+\newcommand{\apj}{{Astrophys. J.}}
+\newcommand{\apjl}{{Astrophys. J.}}
+\newcommand{\pasj}{{PASJ}}
+\newcommand{\mnras}{{MNRAS}}
+\newcommand{\apjs}{ApJS}
+\newcommand{\araa}{ARA\&A}
+\newcommand{\actaa}{Acta Astron.}
+\newcommand{\na}{New Astronomy}
+\newcommand{\nat}{Nature}
+\newcommand{\memsai}{Memorie SAIT}
+\newcommand{\ssr}{Space Science Reviews}
+\newcommand{\pasp}{PASP}
+\newcommand{\aapr}{A\&A~Rev.}
+\newcommand{\physrep}{Phys.~Rep.}
+\newcommand{\nar}{New A Rev.}%
+\newcommand{\prd}{Phys.~Rev.~D}%
+\newcommand{\jcap}{Journal of Cosmology and Astroparticle Physics}
+
+
+\begin{document}
+
+\titlepages                  % Please do not remove these lines
+                             % Pages 1-4 are reserved for publisher
+%\preface                     % requires preface.tex
+
+\mastertoc                   % combined TOC showing all chapter titles
+
+\setcounter{page}{1}
+
+%\part{My Part Title}{}      % optional divider page
+
+% Chapter 1
+%\include{Theory/theory}
+
+% Chapter 2
+%\include{Colpi-Sesana/GW-universe-Colpi-Sesana}
+
+% Chapter 3
+%\include{JY-Vinet/vinet}
+
+% Chapter 4
+\include{LigoVirgo}
+
+% Chapter 5
+%\include{Lisa/Guido}
+
+% Chapter 6
+%\include{LPF/Rita}
+
+% Chapter 7
+%\include{PTA/Petiteau_PTA}
+
+% Chapter 8
+%\include{Geiger/geiger}
+
+
+\printindex[aindx]           % to print author index
+\printindex                  % to print subject index
+
+\end{document} 
