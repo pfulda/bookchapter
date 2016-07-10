@@ -159,3 +159,4 @@ pythontex-files-*/
 TSWLatexianTemp*
 /TEX/main.pdf
 /bookchapter.txss
+/TEX/*.adx
